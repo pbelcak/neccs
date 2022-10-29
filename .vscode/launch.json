@@ -1,0 +1,37 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Single",
+			"type": "python",
+			"request": "launch",
+			"cwd": "${workspaceFolder}/../",
+			"args": [
+				"--mode=single",
+				"--model=incremental_lab_net",
+				"--input-path=neccs/data/EC-4-100",
+				"--output-path=neccs/bests"
+			],
+			"module": "neccs",
+			"justMyCode": true
+		},
+		{
+			"name": "Sweep",
+			"type": "python",
+			"request": "launch",
+			"cwd": "${workspaceFolder}/../",
+			"args": [
+				"--mode=sweep",
+				"--sweep-id=jcdb862d",
+				"--model=incremental_aig_net",
+				"--input-path=neccs/data/EC-4-100",
+				"--output-path=neccs/bests"
+			],
+			"module": "neccs",
+			"justMyCode": true
+		},
+	]
+}
